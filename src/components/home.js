@@ -1,5 +1,5 @@
 import Footer from './footer';
-// import LanguageSwitcher from './languageswitcher';
+import LanguageSwitcher from './languageswitcher';
 import Level from './level';
 import MapExplorer from './mapexplorer';
 import Minigraph from './minigraph';
@@ -175,7 +175,6 @@ function Home(props) {
 
         <div className="home-left">
           <div className="header fadeInUp" style={{animationDelay: '1s'}}>
-            {/* <LanguageSwitcher />*/}
             {fetched && <Search districtZones={districtZones} />}
 
             <div className="actions">
@@ -191,6 +190,7 @@ function Home(props) {
                 </div>
               )}
               {fetched && showUpdates && BellOff}
+              <LanguageSwitcher />
             </div>
           </div>
 
