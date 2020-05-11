@@ -151,6 +151,13 @@ function TimeSeriesExplorer({
           isTotal={activeStateCode === 'TT'}
         />
       )}
+
+      <div className="alert">
+        <Icon.AlertOctagon />
+        <div className="alert-right">
+          {t('Tested chart is independent of uniform scaling')}
+        </div>
+      </div>
     </div>
   );
 }

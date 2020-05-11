@@ -1,5 +1,4 @@
 import Footer from './footer';
-import LanguageSwitcher from './languageswitcher';
 import Level from './level';
 import MapExplorer from './mapexplorer';
 import Minigraph from './minigraph';
@@ -181,7 +180,7 @@ function Home(props) {
               <h5>
                 {isNaN(Date.parse(formatDate(lastUpdated)))
                   ? ''
-                  : formatDateAbsolute(lastUpdated)}
+                  : `${formatDateAbsolute(lastUpdated)} IST`}
               </h5>
               {fetched && !showUpdates && (
                 <div className="bell-icon">
@@ -190,7 +189,6 @@ function Home(props) {
                 </div>
               )}
               {fetched && showUpdates && BellOff}
-              <LanguageSwitcher />
             </div>
           </div>
 
